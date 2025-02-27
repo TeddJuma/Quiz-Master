@@ -1,0 +1,61 @@
+.question-card {
+    border-left: 4px solid #8b5cf6;
+}
+
+.answer-option {
+    border: 2px solid #e5e7eb;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #fff; /* Default text color to white for better visibility on dark background */
+}
+
+.answer-option:hover {
+    border-color: #8b5cf6;
+    background-color: #5c4f7d; /* Blend of dark purple and gray on hover */
+    color: #fff; /* Text color on hover */
+}
+
+.answer-option.selected {
+    border-color: #8b5cf6;
+    background-color: #6c5f8e; /* Blend of dark purple and gray when selected */
+    color: #fff; /* Text color when selected */
+}
+
+.answer-option.correct {
+    border-color: #10b981;
+    background-color: #d1fae5; /* Keep the greenish background for correct answers */
+    color: #047857; /* Use the same color as in .feedback.correct for consistency */
+}
+
+.answer-option.incorrect {
+    border-color: #ef4444;
+    background-color: #fee2e2; /* Keep the reddish background for incorrect answers */
+    color: #b91c1c; /* Use the same color as in .feedback.incorrect for consistency */
+}
+
+.feedback {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.375rem;
+}
+
+.feedback.correct {
+    background-color: #d1fae5;
+    color: #047857;
+}
+
+.feedback.incorrect {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+/* Optional: Global background color for the quiz area */
+.quiz-area {
+    background-color: #6a5d8c; /* Blend of dark purple and gray for the entire quiz area */
+    padding: 1rem;
+    border-radius: 0.375rem;
+    color: #fff; /* Text color to white for better visibility on dark background */
+}
